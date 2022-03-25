@@ -1,4 +1,4 @@
-<div class="characters-filters">
+<div class="characters-filters" *ngIf="characters">
   <app-drop-down
     placeholder="Filter by Status"
     [options]="statusOptions"
@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<div class="pagination">
+<div class="pagination" *ngIf="characters">
   <ngb-pagination
     [collectionSize]="420"
     [(page)]="page"

@@ -5,7 +5,7 @@
   </div>
 </section>
 
-<div class="pagination">
+<div class="pagination" *ngIf="episodes">
   <ngb-pagination
     [collectionSize]="30"
     [(page)]="page"
