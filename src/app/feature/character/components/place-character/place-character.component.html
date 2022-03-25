@@ -1,6 +1,6 @@
 <div *ngIf="location | async; let location" class="location">
   <button class="location_button" [routerLink]="'/'">⬅ Back</button>
-  <h1 style="text-align:center; font-size: 40px ;font-weight: 700; margin-top: 50px;">Location: {{ location.name }}</h1>
+  <h1 style="text-align:center; font-size: 40px ;font-weight: 700; margin-top: 50px;">{{ location.name }}</h1>
   <div class="location_card">
     <div class="location_card_info">
       <p class="location_card_info"><strong>ID: </strong> {{ location.id }}</p>
