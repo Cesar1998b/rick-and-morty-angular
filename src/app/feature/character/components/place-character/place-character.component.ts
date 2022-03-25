@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '../../shared/model/character.model';
 import { CharacterService } from '../../shared/services/character.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -18,7 +17,6 @@ export class PlaceCharacterComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      console.log(params);
       this.location = this.service.getLocation(params.url)
     })
   }

@@ -1,4 +1,10 @@
-nav ul{
-  display: flex;
-  gap: 50px;
+a:hover{
+  color: var(--color-secundary);
+  transition: .3s;
+}
+
+@media (max-width: 800px) {
+  nav ul{
+    display: flex;
+  }
 }

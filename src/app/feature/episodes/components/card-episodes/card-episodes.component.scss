@@ -1,7 +1,11 @@
 .card {
-  width: 420px;
-  min-height: 220px;
+  width: auto;
+  min-height: auto;
   margin: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   overflow: hidden;
   background: var(--color-secundary) none repeat scroll 0 0;
   border-radius: var(--border-radius);
@@ -12,7 +16,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 420px;
+    width: 465px;
   }
 
   @media (max-width: 400px) {
@@ -47,11 +51,12 @@
     flex: 3 1;
     position: relative;
     padding-left: 0.75rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.85rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
     color: #fff;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
     h2,
     p {

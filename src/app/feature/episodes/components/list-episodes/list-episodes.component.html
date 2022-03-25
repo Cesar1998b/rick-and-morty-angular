@@ -1,0 +1,19 @@
+<h1 style="text-align:center; font-size: 40px ;font-weight: 700; margin-top: 50px;">Episodes</h1>
+<section class="container-home">
+  <div *ngFor="let episode of episodes">
+    <app-card-episodes [episode]="episode"></app-card-episodes>
+  </div>
+</section>
+
+<div class="pagination">
+  <ngb-pagination
+    [collectionSize]="30"
+    [(page)]="page"
+    [maxSize]="3"
+    [rotate]="false"
+    [ellipses]="false"
+    [boundaryLinks]="true"
+    (pageChange)="loadNextPage()"
+  >
+  </ngb-pagination>
+</div>

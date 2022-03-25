@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   actualPage: number = 1;
   pageSize: number = 0;
   totalItems: number = 0;
-  showLoading: boolean = false;
 
   constructor(private service: CharacterService) {}
 

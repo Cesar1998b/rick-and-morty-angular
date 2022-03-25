@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 
 import { Character, Location } from '../../shared/model/character.model';
 import { Episodes } from 'src/app/feature/episodes/shared/model/episodes.model';
