@@ -1,27 +1,67 @@
-# RickMortyAngular
+# Rick And Morty Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+This site uses the Rick and Morty API to render a database of characters, locations and episodes.
+
+Take a look at the API docs: https://rickandmortyapi.com/documentation/
+
+The finished site can be found at:
+
+https://rick-and-morty-angular.vercel.app/
+
+The following is a prioritized list of features.
+
+    1.Design and build out a functioning character listing page with pagination.
+    2.Through the characters you can visit the information of the last location
+    3.The app is responsive and has a hamburger navbar
+    
+
+- Application developed with the structure recommended by Angular core-feature-shared
+
+- Styles developed with the BEM methodology customizing __ by _
+
+- navbar, footer, pagination implemented with bootstrap
+
+- unit tests with the AAA pattern
+
+- application deployed in [Vercel](https://vercel.com)
+
+# Project Requirements
+
+Ensure that you are using the latest [LTS node release](https://nodejs.org/es/).
+
+Ensure that you have the latest version of Angular or Install:
+
+```bash
+npm install -g @angular/cli
+```
+
+## Dependencies
+
+- ng-bootstrap/ng-bootstrap
+- bootstrap
+- ngx-bootstrap
+- ngx-pagination
+
+## Getting Started
+### Clone and install
+
+```bash
+# Clone the repo.
+git clone https://github.com/Cesar1998b/rick-and-morty-angular.git
+# Change directory to repo.
+cd rick-and-morty-angular 
+# Use npm install the dependencies.
+npm install
+```
 
 ## Development server
+We have preconfigured the project with a simple development web server. The simplest way to start this server is:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```npm
+npm run start
+```
+Now browse to [localhost:4200](https://localhost:4200) to view app.
 
-## Code scaffolding
+## Unit tests
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
