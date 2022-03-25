@@ -1,13 +1,13 @@
-<div class="country-filters">
+<div class="characters-filters">
   <app-drop-down
-    placeholder="Filter by Species"
-    [options]="regionOptions"
-    [(value)]="regionFilter"
+    placeholder="Filter by Status"
+    [options]="statusOptions"
+    [(value)]="statusFilter"
   ></app-drop-down>
 </div>
 
 <section class="container-home">
-  <div *ngFor="let character of characters | select:regionFilter">
+  <div *ngFor="let character of characters | select:statusFilter">
     <app-card-character [character]="character"></app-card-character>
   </div>
 </section>

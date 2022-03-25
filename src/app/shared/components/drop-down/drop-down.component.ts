@@ -25,7 +25,7 @@ export class DropDownComponent {
     this.showOptions = !this.showOptions;
   }
 
-  regionSelect(){
+  statusSelect(){
     return this.placeholder = (this.value !== '') ? this.value : this.placeholder;
   }
 

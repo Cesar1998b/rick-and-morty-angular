@@ -26,7 +26,6 @@ export class CharacterService {
   }
 
   getCharactersPerPage(page: number) {
-    console.log();
     return this.http.get<Character[]>(`${this.api}/character?page=${page}`);
   }
 }

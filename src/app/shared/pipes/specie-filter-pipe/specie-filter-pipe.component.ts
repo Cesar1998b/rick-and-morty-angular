@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SelectPipe implements PipeTransform {
 
-    transform(items: any, sel?: any): any {
-        return sel !== '' && sel !== 'All' ? items.filter((item: any) => item.species === sel) : items;
+    transform(items: any, select?: any): any {
+        return select !== '' && select !== 'None' ? items.filter((item: any) => item.status === select) : items;
     }
 }
