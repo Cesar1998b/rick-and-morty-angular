@@ -1,0 +1,27 @@
+<div *ngIf="location | async; let location" class="location">
+  <button class="location_button" [routerLink]="'/'">⬅ Back</button>
+  <div class="location_card">
+    <div class="location_card_info_left">
+      <p class="location_card_info">
+        <strong>Name: </strong> {{ location.name }}
+      </p>
+      <p class="location_card_info">
+        <strong>Dimension: </strong> {{ location.dimension }}
+      </p>
+      <p class="location_card_info">
+        <strong>ID: </strong> {{ location.id }}
+      </p>
+    </div>
+    <div class="card_info_rigth">
+      <p class="location_card_info">
+        <strong>Type: </strong> {{ location.type }}
+      </p>
+      <p class="location_card_info">
+        <strong>Created: </strong> {{ location.created }}
+      </p>
+      <p class="location_card_info">
+        <strong>Url: </strong> <a [href]="location.url">{{ location.url }}</a>
+      </p>
+    </div>
+  </div>
+</div>

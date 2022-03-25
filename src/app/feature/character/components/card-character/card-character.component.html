@@ -1,0 +1,20 @@
+<div class="card" *ngIf="character">
+  <div class="card_img">
+    <img [src]="character.image" alt="" />
+  </div>
+  <div class="card_info">
+    <h2 class="card_info_name">{{ character.name }}</h2>
+    <p class="card_info_status">
+      <strong>Status: </strong>{{ character.status }}
+    </p>
+    <p class="card_info_specie">
+      <strong>Specie: </strong> {{ character.species }}
+    </p>
+    <p class="card_info_episode">
+      <strong>First Episode: </strong> {{ character.firstEpisode }}
+    </p>
+    <p class="card_info_place">
+      <strong>Location: </strong> <a [routerLink]="'/location' + character.location.url.slice(40) ">{{ character.location.name }}</a>
+    </p>
+  </div>
+</div>

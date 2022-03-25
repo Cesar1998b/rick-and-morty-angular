@@ -1,0 +1,50 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  padding: 30px;
+
+  &_button {
+    background-color: #fff;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: var(--border-radius);
+    width: 125px;
+  }
+
+  &_button:hover {
+    background-color: rgb(192, 189, 189);
+    transition: .3s;
+  }
+
+  &_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 60%;
+    margin-top: 35px;
+    text-align: center;
+    background: var(--color-secundary) none repeat scroll 0 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+
+    @media (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+    }
+
+    &_info {
+      overflow-wrap: anywhere;
+      font-size: 20px;
+    }
+    &_info a {
+      color: #0099ff;
+      text-decoration: none;
+    }
+  }
+}
