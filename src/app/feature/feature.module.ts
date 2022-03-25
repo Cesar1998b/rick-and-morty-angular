@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ListEpisodesComponent } from './episodes/components/list-episodes/list-episodes.component';
 import { CardEpisodesComponent } from './episodes/components/card-episodes/card-episodes.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,12 @@ import { CardEpisodesComponent } from './episodes/components/card-episodes/card-
     ListEpisodesComponent,
     CardEpisodesComponent,
   ],
-  imports: [CommonModule, FeatureRoutingModule, NgbModule, NgxPaginationModule],
+  imports: [
+    CommonModule,
+    FeatureRoutingModule,
+    NgbModule,
+    NgxPaginationModule,
+    SharedModule,
+  ],
 })
 export class FeatureModule {}

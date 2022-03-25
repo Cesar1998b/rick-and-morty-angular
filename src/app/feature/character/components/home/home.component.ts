@@ -3,6 +3,7 @@ import { CharacterService } from '../../shared/services/character.service';
 import { Character } from './../../shared/model/character.model';
 import { Episodes } from '../../../episodes/shared/model/episodes.model';
 
+const REGION_OPTIONS = ['All', 'Human', 'Alien', 'Mythological Creature', 'Poopybutthole', 'unknown', 'Humanoid','Animal','Robot','Disease','Cronenberg'];
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,6 +16,9 @@ export class HomeComponent implements OnInit {
   actualPage: number = 1;
   pageSize: number = 0;
   totalItems: number = 0;
+  regionFilter: string = '';
+  regionOptions = REGION_OPTIONS;
+
 
   constructor(private service: CharacterService) {}
 
