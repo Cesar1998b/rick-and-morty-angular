@@ -5,7 +5,14 @@
   align-items: center;
   max-width: 1920px;
   height: 83vh;
-  padding: 30px;
+
+  @media (max-width: 800px) {
+    margin-top: 20px;
+
+    h1{
+      font-size: 30px;
+    }
+  }
 
   &_button {
     background-color: #fff;
@@ -39,12 +46,18 @@
     padding: 30px;
 
     @media (max-width: 800px) {
-      width: 350px;
+      width: 337px;
     }
 
     &_info {
       overflow-wrap: anywhere;
       font-size: 20px;
+
+
+      @media (max-width: 450px) {
+        font-size: 16px;
+      }
+
     }
     &_info a {
       color: #0099ff;
