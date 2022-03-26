@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   max-width: 1920px;
   height: 83vh;
 
@@ -37,7 +38,7 @@
   &_card {
     display: grid;
     align-items: center;
-    width: 40%;
+    width: 60%;
     margin-top: 35px;
     text-align: center;
     background: var(--color-secundary) none repeat scroll 0 0;
@@ -45,7 +46,7 @@
     box-shadow: var(--box-shadow);
     padding: 30px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       width: 337px;
     }
 
