@@ -7,7 +7,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class DropDownComponent {
 
-  showOptions = false;
   @Input() placeholder: string = '';
 
   @Input() options: string[] = [];
@@ -15,6 +14,8 @@ export class DropDownComponent {
   @Input() value: string = '';
 
   @Output()valueChange: EventEmitter<string> = new EventEmitter();
+
+  showOptions = false;
 
   select(value: string) {
     this.showOptions = !this.showOptions;

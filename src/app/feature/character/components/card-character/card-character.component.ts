@@ -8,7 +8,7 @@ import { Character } from '../../shared/model/character.model';
 })
 export class CardCharacterComponent implements OnInit {
 
-  @Input() character: Character | undefined;
+  @Input() character: Character;
 
   constructor() { }
 

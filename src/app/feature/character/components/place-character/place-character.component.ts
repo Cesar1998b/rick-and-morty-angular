@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class PlaceCharacterComponent implements OnInit {
 
-  location: Observable<any> | undefined;
+  location: Observable<any>;
 
   constructor(private service: CharacterService, private route: ActivatedRoute) { }
 

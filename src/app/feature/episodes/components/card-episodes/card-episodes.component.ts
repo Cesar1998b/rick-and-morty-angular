@@ -8,7 +8,7 @@ import { Episodes } from '../../shared/model/episodes.model';
 })
 export class CardEpisodesComponent implements OnInit {
 
-  @Input() episode: Episodes | undefined;
+  @Input() episode: Episodes;
 
   constructor() { }
 
